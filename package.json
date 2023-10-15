@@ -1,0 +1,15 @@
+{
+  "name": "no996",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@gitee.com:zhoushenyun/vue_press_note.git",
+  "author": "zhoushengyun <2856234574@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.9.10"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
