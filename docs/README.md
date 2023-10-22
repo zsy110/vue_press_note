@@ -4,10 +4,10 @@ heroImage: images/logo.png
 heroText: java学习指南
 actions:
   - text: 开始学习
-    link: /guide/
+    link: /md/java/
     type: primary
-  - text: 演示站点
-    link: http://43.134.164.127:8089/
+  - text: 一起交流
+    link: /md/联系我.md
     type: secondary
 features:
 - title: Java 面向对象和基础

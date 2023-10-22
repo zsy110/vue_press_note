@@ -17,6 +17,9 @@ devDependencies:
   vuepress:
     specifier: 2.0.0-beta.67
     version: registry.npmmirror.com/vuepress@2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.6)
+  vuepress-plugin-auto-sidebar:
+    specifier: 2.4.0-alpha.5
+    version: registry.npmmirror.com/vuepress-plugin-auto-sidebar@2.4.0-alpha.5
 
 packages:
 
@@ -1149,6 +1152,13 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
+  registry.npmmirror.com/colors@1.4.0:
+    resolution: {integrity: sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/colors/-/colors-1.4.0.tgz}
+    name: colors
+    version: 1.4.0
+    engines: {node: '>=0.1.90'}
+    dev: true
+
   registry.npmmirror.com/connect-history-api-fallback@2.0.0:
     resolution: {integrity: sha512-U73+6lQFmfiNPrYbXqr6kZ1i1wiRqXnp2nhMsINseWXO8lDau0LGEffJ8kQi4EjLZympVgRdvqjAgiZ1tgzDDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/connect-history-api-fallback/-/connect-history-api-fallback-2.0.0.tgz}
     name: connect-history-api-fallback
@@ -1282,6 +1292,23 @@ packages:
     version: 2.0.2
     dev: true
 
+  registry.npmmirror.com/execa@5.1.1:
+    resolution: {integrity: sha512-8uSpZZocAZRBAPIEINJj3Lo9HyGitllczc27Eh5YYojjMFMn8yHMDMaUHE2Jqfq05D/wucwI4JGURyXt1vchyg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/execa/-/execa-5.1.1.tgz}
+    name: execa
+    version: 5.1.1
+    engines: {node: '>=10'}
+    dependencies:
+      cross-spawn: registry.npmmirror.com/cross-spawn@7.0.3
+      get-stream: registry.npmmirror.com/get-stream@6.0.1
+      human-signals: registry.npmmirror.com/human-signals@2.1.0
+      is-stream: registry.npmmirror.com/is-stream@2.0.1
+      merge-stream: registry.npmmirror.com/merge-stream@2.0.0
+      npm-run-path: registry.npmmirror.com/npm-run-path@4.0.1
+      onetime: registry.npmmirror.com/onetime@5.1.2
+      signal-exit: registry.npmmirror.com/signal-exit@3.0.7
+      strip-final-newline: registry.npmmirror.com/strip-final-newline@2.0.0
+    dev: true
+
   registry.npmmirror.com/execa@8.0.1:
     resolution: {integrity: sha512-VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/execa/-/execa-8.0.1.tgz}
     name: execa
@@ -1365,6 +1392,13 @@ packages:
     dev: true
     optional: true
 
+  registry.npmmirror.com/get-stream@6.0.1:
+    resolution: {integrity: sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-stream/-/get-stream-6.0.1.tgz}
+    name: get-stream
+    version: 6.0.1
+    engines: {node: '>=10'}
+    dev: true
+
   registry.npmmirror.com/get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/get-stream/-/get-stream-8.0.1.tgz}
     name: get-stream
@@ -1416,6 +1450,13 @@ packages:
     resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hash-sum/-/hash-sum-2.0.0.tgz}
     name: hash-sum
     version: 2.0.0
+    dev: true
+
+  registry.npmmirror.com/human-signals@2.1.0:
+    resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/human-signals/-/human-signals-2.1.0.tgz}
+    name: human-signals
+    version: 2.1.0
+    engines: {node: '>=10.17.0'}
     dev: true
 
   registry.npmmirror.com/human-signals@5.0.0:
@@ -1494,6 +1535,13 @@ packages:
     name: is-number
     version: 7.0.0
     engines: {node: '>=0.12.0'}
+    dev: true
+
+  registry.npmmirror.com/is-stream@2.0.1:
+    resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-stream/-/is-stream-2.0.1.tgz}
+    name: is-stream
+    version: 2.0.1
+    engines: {node: '>=8'}
     dev: true
 
   registry.npmmirror.com/is-stream@3.0.0:
@@ -1640,6 +1688,12 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
+  registry.npmmirror.com/merge@2.1.1:
+    resolution: {integrity: sha512-jz+Cfrg9GWOZbQAnDQ4hlVnQky+341Yk5ru8bZSe6sIDTCIg8n9i/u7hSQGSVOF3C7lH6mGtqjkiT9G4wFLL0w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/merge/-/merge-2.1.1.tgz}
+    name: merge
+    version: 2.1.1
+    dev: true
+
   registry.npmmirror.com/micromatch@4.0.5:
     resolution: {integrity: sha512-DMy+ERcEW2q8Z2Po+WNXuw3c5YaUSFjAO5GsJqfEl7UjvtIuFKO6ZrKvcItdy98dwFI2N1tg3zNIdKaQT+aNdA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/micromatch/-/micromatch-4.0.5.tgz}
     name: micromatch
@@ -1696,6 +1750,15 @@ packages:
     name: normalize-range
     version: 0.1.2
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  registry.npmmirror.com/npm-run-path@4.0.1:
+    resolution: {integrity: sha512-S48WzZW777zhNIrn7gxOlISNAqi9ZC/uQFnRdbeIHhZhCA6UqpkOT8T1G7BvfdgP4Er8gF4sUbaS0i7QvIfCWw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/npm-run-path/-/npm-run-path-4.0.1.tgz}
+    name: npm-run-path
+    version: 4.0.1
+    engines: {node: '>=8'}
+    dependencies:
+      path-key: registry.npmmirror.com/path-key@3.1.1
     dev: true
 
   registry.npmmirror.com/npm-run-path@5.1.0:
@@ -2002,6 +2065,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  registry.npmmirror.com/strip-final-newline@2.0.0:
+    resolution: {integrity: sha512-BrpvfNAE3dcvq7ll3xVumzjKjZQ5tI1sEUIKr3Uoks0XUl45St3FlatVqef9prk4jRDzhW6WZg+3bk93y6pLjA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/strip-final-newline/-/strip-final-newline-2.0.0.tgz}
+    name: strip-final-newline
+    version: 2.0.0
+    engines: {node: '>=6'}
+    dev: true
+
   registry.npmmirror.com/strip-final-newline@3.0.0:
     resolution: {integrity: sha512-dOESqjYr96iWYylGObzd39EuNTa5VJxyvVAEm5Jnh7KGo75V43Hk1odPQkNDyXNmUR6k+gEiDVXnjB8HJ3crXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/strip-final-newline/-/strip-final-newline-3.0.0.tgz}
     name: strip-final-newline
@@ -2159,6 +2229,16 @@ packages:
       '@vue/runtime-dom': registry.npmmirror.com/@vue/runtime-dom@3.3.6
       '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.6(vue@3.3.6)
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.6
+    dev: true
+
+  registry.npmmirror.com/vuepress-plugin-auto-sidebar@2.4.0-alpha.5:
+    resolution: {integrity: sha512-d7JcfuTm+18rqAm8c4V8JD3S1O8i6j6kSUWP4290kPHuLejnF5SqHeexKK9of26UwaglwCmz7YaXlijSUo4FZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vuepress-plugin-auto-sidebar/-/vuepress-plugin-auto-sidebar-2.4.0-alpha.5.tgz}
+    name: vuepress-plugin-auto-sidebar
+    version: 2.4.0-alpha.5
+    dependencies:
+      colors: registry.npmmirror.com/colors@1.4.0
+      execa: registry.npmmirror.com/execa@5.1.1
+      merge: registry.npmmirror.com/merge@2.1.1
     dev: true
 
   registry.npmmirror.com/vuepress-vite@2.0.0-beta.67(@vuepress/client@2.0.0-beta.67)(vue@3.3.6):
