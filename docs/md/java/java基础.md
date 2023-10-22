@@ -1,22 +1,22 @@
-# 1. 运算符
+## 1. 运算符
 
-## 1.1. 三元运算符
+### 1.1. 三元运算符
 
 1. 表达式1 和表达式2的类型要求是一致的。
 2. 三元运算符可以嵌套使用
 
-## 1.2. 位运算符
+### 1.2. 位运算符
 
 1. 5<<1,左移放大一倍
 2. 无符号右移位运算>>>结果都为正数，java无左移
 
-# 2. 流程控制
+## 2. 流程控制
 
-## 2.1. 顺序
+### 2.1. 顺序
 
 自上而下，没有跳转和循环
 
-## 2.2. 分支
+### 2.2. 分支
 
 if -else、switch-case-default
 （1） break,可以使用在switch-case结构中，表示一旦执行到此关键字，就跳出switch-case结构；
@@ -26,15 +26,15 @@ byte 、short、char、int、枚举类型(JDK5.0新增)、String类型(JDK7.0新
 （4） break关键字是可选的；
 （5） default:相当于if-else结构中的else，default结构是可选的，而且位置是灵活的；
 
-## 2.3. 循环
+### 2.3. 循环
 
 （1）for循环
 （2）while
 （3）do-while
 
-# 3. 数组
+## 3. 数组
 
-## 3.1. 数组元素默认值
+### 3.1. 数组元素默认值
 
 数组元素是整型：0
 数组元素是浮点型：0.0
@@ -42,7 +42,7 @@ byte 、short、char、int、枚举类型(JDK5.0新增)、String类型(JDK7.0新
 数组元素是boolean型：false
 数组元素是引用数据类型：null
 
-## 3.2. 常用排序算法
+### 3.2. 常用排序算法
 
 选择排序：直接选择排序、堆排序
 交换排序：冒泡排序、快速排序
@@ -55,11 +55,11 @@ byte 、short、char、int、枚举类型(JDK5.0新增)、String类型(JDK7.0新
 2）排序的分类：内部排序 与 外部排序（需要借助磁盘）
 3）不同排序算法的时间复杂度
 
-## 3.3. 复杂度说明
+### 3.3. 复杂度说明
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2a93e887210f4af2a7f763a14d767563.png)
 
-## 3.4. Arrays常用api方法
+### 3.4. Arrays常用api方法
 
 ```java
 // 1.Arrays.equals(arr1, arr2):判断数组是否相等
@@ -77,23 +77,23 @@ int index = Arrays.binarySearch(arr2, 1);
 System.out.println(index);
 ```
 
-# 4. 面向对象三大特性
+## 4. 面向对象三大特性
 
-## 4.1. 封装性（追求高内聚低耦合）
+### 4.1. 封装性（追求高内聚低耦合）
 
-### 4.1.1. 权限修饰符
+#### 4.1.1. 权限修饰符
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/6307b45fc5cc48adbc87132a562c73c0.png)
 
-## 4.2. 继承性
+### 4.2. 继承性
 
-### 4.2.1.  引入继承性的好处
+#### 4.2.1.  引入继承性的好处
 
 减少了代码的冗余，提高了代码的复用性
 便于功能的扩展
 为之后多态性的使用，提供了前提
 
-### 4.2.2.  继承性说明
+#### 4.2.2.  继承性说明
 
 子类A继承父类B以后，子类A中就获取了父类B中声明的所有的属性和方法。
 子类继承父类以后，还可以声明自己特有的属性或方法：实现功能的拓展。
@@ -102,7 +102,7 @@ Java中类的单继承性：一个类只能有一个父类
 java.lang.Object是Java中所有类的父类
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/e2dcdd7a36304b598dfb5eeeab946d3b.png)
 
-### 4.2.3. this和super
+#### 4.2.3. this和super
 
 可以用来调用属性、方法、构造器
 
@@ -111,25 +111,25 @@ java.lang.Object是Java中所有类的父类
     3. 构造器使用this(形参列表)、super(形参列表)。
        ![在这里插入图片描述](https://img-blog.csdnimg.cn/e44bfb700b274b4bafd729f33e105d64.png)
 
-## 4.3. 多态性
+### 4.3. 多态性
 
     1. 对象的多态性：父类的引用指向子类的对象（或子类的对象赋给父类的引用），只适用于方法，不能用于属性
     2. 最常见的就是service层中的接口及实现类。
     3. 在编译期，只能调用父类中声明的方法，但在运行期，我们实际执行的是子类重写父类的方法。
     4. 编译时和运行时类型不一致，产生了多态，多态是一种运行时行为。
 
-## 4.4. 多态性的使用前提
+### 4.4. 多态性的使用前提
 
 ① 类的继承关系 ② 方法的重写
 
-## 4.5. 多态性的理解
+### 4.5. 多态性的理解
 
     1. 实现代码的通用性。
     2. Object类中定义的public boolean equals(Object obj){  }  
        JDBC:使用java程序操作(获取数据库连接、CRUD)数据库(MySQL、Oracle、DB2、SQL Server)
     3. 抽象类、接口的使用肯定体现了多态性。（抽象类、接口不能实例化）
 
-## 4.6. Object类方法及包装类
+### 4.6. Object类方法及包装类
 
 方法：equals() / toString() / getClass() /hashCode() / clone() / finalize()   wait() 、 notify()、notifyAll()
 
@@ -137,9 +137,9 @@ java.lang.Object是Java中所有类的父类
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9b8394de92cd4a8b8fa9f0d0d8cbe085.png)
 
-# 5. 常用关键字static、final、abstract、interface
+## 5. 常用关键字static、final、abstract、interface
 
-## 5.1. static及单例模式
+### 5.1. static及单例模式
 
     1. 主要修饰属性、方法、代码块、内部类
     2. （1）静态变量和方法随着类的加载而加载。
@@ -199,7 +199,7 @@ class Order{
 }
 ```
 
-## 5.2. final
+### 5.2. final
 
 1.可以用来修饰：类、方法、变量
 
@@ -215,7 +215,7 @@ class Order{
 
 2.3 final 用来修饰变量：此时的"变量"就称为是一个常量
 
-## 5.3. abstract
+### 5.3. abstract
 
 1.可以用来修饰：类、方法
 2.具体的：
@@ -269,9 +269,9 @@ abstract修饰方法：抽象方法
 
  * 6. 接口与接口之间可以继承，而且可以多继承
 
-# 6. 内部类及异常处理
+## 6. 内部类及异常处理
 
-## 6.1. 内部类
+### 6.1. 内部类
 
 1.定义：Java中允许将一个类A声明在另一个类B中，则类A就是内部类，类B称为外部类.
 2.内部类的分类：
@@ -293,7 +293,7 @@ abstract修饰方法：抽象方法
 
  * > 可以被abstract修饰
 
-## 6.2. 异常处理
+### 6.2. 异常处理
 
 **异常的体系结构**
 
@@ -332,7 +332,7 @@ throw 和  throws区别：
 throw 表示抛出一个异常类的对象，生成异常对象的过程。声明在方法体内。
 throws 属于异常处理的一种方式，声明在方法的声明处。
 
-## 6.3. 自定义异常类
+### 6.3. 自定义异常类
 
  * 继承于现的异常结构：RuntimeException 、Exception
  * 提供全局常量：serialVersionUID
@@ -355,25 +355,25 @@ public class MyException extends Exception{
 
 ```
 
-# 7. 多线程
+## 7. 多线程
 
-## 7.1. 并行与并发的理解及java程序的至少三个线程
+### 7.1. 并行与并发的理解及java程序的至少三个线程
 
 1. 并行：多个CPU同时执行多个任务。比如：多个人同时做不同的事。
 2. 并发：一个CPU(采用时间片)同时执行多个任务。比如：秒杀、多个人做同一件事
 
 **一个Java应用程序java.exe，其实至少三个线程：main()主线程，gc()垃圾回收线程，异常处理线程。当然如果发生异常，会影响主线程。**
 
-## 7.2. 创建多线程方式
+### 7.2. 创建多线程方式
 
-### 7.2.1. 继承Thread类的方式
+#### 7.2.1. 继承Thread类的方式
 
 * 1. 创建一个继承于Thread类的子类
 * 2. 重写Thread类的run() --> 将此线程执行的操作声明在run()中
 * 3. 创建Thread类的子类的对象
 * 4. 通过此对象调用start()：①启动当前线程 ② 调用当前线程的run()
 
-### 7.2.2. 实现Runnable接口的方式
+#### 7.2.2. 实现Runnable接口的方式
 
 * 1. 创建一个实现了Runnable接口的类
 * 2. 实现类去实现Runnable中的抽象方法：run()
@@ -401,7 +401,7 @@ public class MyException extends Exception{
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/bef83ea866e946fe9e04935c4d2b4e72.png)
 
-### 7.2.3. 实现Callable接口
+#### 7.2.3. 实现Callable接口
 
 ```java
 //1.创建一个实现Callable的实现类
@@ -447,7 +447,7 @@ public class ThreadNew {
 * 2. call()可以抛出异常，被外面的操作捕获，获取异常的信息
 * 3. Callable是支持泛型的
 
-### 7.2.4. 使用线程池
+#### 7.2.4. 使用线程池
 
 ```java
 class NumberThread implements Runnable{
@@ -495,7 +495,7 @@ public class ThreadPool {
 }
 ```
 
-### 7.2.5. 线程通信
+#### 7.2.5. 线程通信
 
 1.线程通信涉及到的三个方法：
 
@@ -520,7 +520,7 @@ public class ThreadPool {
 
   3）关于是否释放同步监视器：如果两个方法都使用在同步代码块或同步方法中，sleep()不会释放锁，wait()会释放锁。
 
-### 7.2.6. **单例模式中的懒汉式改写为线程安全**
+#### 7.2.6. **单例模式中的懒汉式改写为线程安全**
 
 ```java
 class Bank{
@@ -547,11 +547,11 @@ class Bank{
 }
 ```
 
-# 8. String类、排序比较器和System类
+## 8. String类、排序比较器和System类
 
-## 8.1. String类
+### 8.1. String类
 
-### 8.1.1. String概述
+#### 8.1.1. String概述
 
 1.String声明为final的，不可被继承
 2.String实现了Serializable接口：表示字符串是支持序列化的。
@@ -604,15 +604,15 @@ boolean matches(String regex)：告知此字符串是否匹配给定的正则表
 String[] split(String regex)：根据给定正则表达式的匹配拆分此字符串。
 String[] split(String regex, int limit)：根据匹配给定的正则表达式来拆分此字符串，最多不超过limit个，如果超过了，剩下的全部都放到最后一个元素中。
 
-### 8.1.2. String、StringBuffer、StringBuilder三者的对比
+#### 8.1.2. String、StringBuffer、StringBuilder三者的对比
 
 String:不可变的字符序列；底层使用char[]存储
 StringBuffer:可变的字符序列；线程安全的，效率低；底层使用char[]存储
 StringBuilder:可变的字符序列；jdk5.0新增的，线程不安全的，效率高；底层使用char[]存储
 
-## 8.2. 排序比较器
+### 8.2. 排序比较器
 
-### 8.2.1. 自然排序：使用Comparable接口
+#### 8.2.1. 自然排序：使用Comparable接口
 
 ```java
 public class Goods implements  Comparable{
@@ -644,7 +644,7 @@ public class Goods implements  Comparable{
 }
 ```
 
-### 8.2.2. 定制排序：使用Comparator接口
+#### 8.2.2. 定制排序：使用Comparator接口
 
 ```java
 Comparator com = new Comparator() {
@@ -675,7 +675,7 @@ new TreeSet(com);
 *    Comparable接口的方式一旦一定，保证Comparable接口实现类的对象在任何位置都可以比较大小。
 *    Comparator接口属于临时性的比较。
 
-## 8.3. System类
+### 8.3. System类
 
 System类代表系统，系统级的很多属性和控制方法都放置在该类的内部。该类位于java.lang包。
 由于该类的构造器是private的，所以无法创建该类的对象，也就是无法实例化该类。其内部的成员变量和成员方法都是static的，所以也可以很方便的进行调用。
@@ -686,9 +686,9 @@ System类代表系统，系统级的很多属性和控制方法都放置在该�
 3. void gc()
 4. String getProperty(String key)
 
-# 9. 枚举类和注解
+## 9. 枚举类和注解
 
-## 9.1. 枚举类
+### 9.1. 枚举类
 
 ```java
 enum Season1 {
@@ -743,9 +743,9 @@ enum Season1 {
     System.out.println(winter);
 ```
 
-## 9.2. 注解
+### 9.2. 注解
 
-### 9.2.1. 内置注解
+#### 9.2.1. 内置注解
 
 ```java
     @Override: 限定重写父类方法, 该注解只能用于方法
@@ -757,7 +757,7 @@ enum Season1 {
 自定义注解必须配上注解的信息处理流程(使用反射)才意义。
 自定义注解通常都会指明两个元注解：Retention、Target
 
-### 9.2.2. 元注解
+#### 9.2.2. 元注解
 
 jdk 提供的4种元注解：
 Retention：指定所修饰的 Annotation 的生命周期：SOURCE < CLASS < RUNTIME
@@ -767,7 +767,7 @@ Target:用于指定被修饰的 Annotation 能用于修饰哪些程序元素
 Documented:表示所修饰的注解在被javadoc解析时，保留下来。
 Inherited:被它修饰的 Annotation 将具继承性。
 
-### 9.2.3. JDK8中注解的新特性：可重复注解、类型注解
+#### 9.2.3. JDK8中注解的新特性：可重复注解、类型注解
 
 **可重复注解：**① 在MyAnnotation上声明@Repeatable，成员值为MyAnnotations.class
                ② MyAnnotation的Target和Retention等元注解与MyAnnotations相同。
@@ -776,7 +776,7 @@ Inherited:被它修饰的 Annotation 将具继承性。
 ElementType.TYPE_PARAMETER 表示该注解能写在类型变量的声明语句中（如：泛型声明。
 ElementType.TYPE_USE 表示该注解能写在使用类型的任何语句中。
 
-### 9.2.4. 自定义注解
+#### 9.2.4. 自定义注解
 
 **使用注意**
 
@@ -798,9 +798,9 @@ ElementType.TYPE_USE 表示该注解能写在使用类型的任何语句中。
 }
 ```
 
-# 10. 泛型
+## 10. 泛型
 
-## 10.1. 介绍
+### 10.1. 介绍
 
 如果定义了泛型类，实例化没指明类的泛型，则认为此泛型类型为Object类型
 
@@ -810,7 +810,7 @@ ElementType.TYPE_USE 表示该注解能写在使用类型的任何语句中。
 
 ![](https://img-blog.csdnimg.cn/b9958e33d68e45e3aa4840fab5771721.png)![在这里插入图片描述](https://img-blog.csdnimg.cn/84fd9b9f47cb421294d79df7aba4d27a.png)
 
-## 10.2. **常用的 T，E，K，V，？**
+### 10.2. **常用的 T，E，K，V，？**
 
 本质上这些个都是通配符，没啥区别，只不过是编码时的一种约定俗成的东西。比如上述代码中的 T ，我们可以换成 A-Z 之间的任何一个 字母都可以，并不会影响程序的正常运行，但是如果换成其他的字母代替 T ，在可读性上可能会弱一些。通常情况下，T，E，K，V，？是这样约定的：
 
@@ -822,7 +822,7 @@ K V (key value) 分别代表java键值中的Key Value
 
 E (element) 代表Elemen
 
-## 10.3. 无界限通配符？
+### 10.3. 无界限通配符？
 
 **上界通配符 < ? extends E>** 
 
@@ -855,9 +855,9 @@ public class SubOrder1<T> extends Order<T> {//SubOrder1<T>:仍然是泛型类
 }
 ```
 
-# 11. 反射
+## 11. 反射
 
-## 11.1. Java反射优点和缺点
+### 11.1. Java反射优点和缺点
 
 优点：可以实现动态创建对象和编译，体现出很大的灵活性 !
 
@@ -865,7 +865,7 @@ public class SubOrder1<T> extends Order<T> {//SubOrder1<T>:仍然是泛型类
 
 足我们的要求。这类操作总是慢于 直接执行相同的操作。
 
-## 11.2. 反射机制能提供的功能
+### 11.2. 反射机制能提供的功能
 
 1. 在运行时判断任意一个对象所属的类
 2. 在运行时构造任意一个类的对象
@@ -874,7 +874,7 @@ public class SubOrder1<T> extends Order<T> {//SubOrder1<T>:仍然是泛型类
 5. 在运行时调用任意一个对象的成员变量和方法在运行时处理注解
 6. 生成动态代理
 
-## 11.3. 获取Class实例
+### 11.3. 获取Class实例
 
 ```java
         Class clazz1 = Person.class;
@@ -916,7 +916,7 @@ primitive type：基本数据类型
 
 void
 
-## 11.4. 获取运行时类的完整结构
+### 11.4. 获取运行时类的完整结构
 
 ```java
     @Test
@@ -1062,7 +1062,7 @@ void
     }
 ```
 
-## 11.5. 调用运行时类的指定结构
+### 11.5. 调用运行时类的指定结构
 
 ```java
     @Test
@@ -1142,7 +1142,7 @@ void
     }
 ```
 
-## 11.6. **调用指定的方法**
+### 11.6. **调用指定的方法**
 
 通过Class类的getMethod(String name,Class…parameterTypes)方法取得一个Method对象，并设置此方法操作时所需要的参数类型。
 
@@ -1154,7 +1154,7 @@ void
 4. 若原方法形参列表为空，则Object[] args为null
 5. 若原方法声明为private,则需要在调用此invoke()方法前，显式调用方法对象的setAccessible(true)方法，将可访问private的方法。
 
-## 11.7. **setAccessible**
+### 11.7. **setAccessible**
 
 1. Method和Field、Constructor对象都有setAccessible()方法。
 2. setAccessible作用是启动和禁用访问安全检查的开关。

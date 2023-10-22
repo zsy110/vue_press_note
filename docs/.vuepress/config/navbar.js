@@ -22,6 +22,20 @@ module.exports = [
         ]
     },
     {
+        text: 'Linux',
+        children: [
+            {
+                text: 'linux基础',
+                children: [
+                    {
+                        text: 'linux简单使用',
+                        link: '/md/linux/linux基础使用.md'
+                    },
+                ]
+            },
+        ]
+    },
+    {
         text: '开发工具',
         children: [{
             text: '在线编辑',
