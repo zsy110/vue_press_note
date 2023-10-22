@@ -61,3 +61,4 @@ node_modules
 .temp
 .cache
 *lock.yaml
+pnpm-lock.yaml

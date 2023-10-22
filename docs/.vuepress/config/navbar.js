@@ -72,6 +72,10 @@ module.exports = [
     },
     {
         text: '关于',
-        link: '/components/'
+        link: '/md/about.md'
+    },
+    {
+        text: '错误反馈',
+        link: '/md/feedback/'
     },
 ]

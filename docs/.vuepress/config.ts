@@ -2,7 +2,13 @@ import { defineUserConfig } from 'vuepress';
 import { defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import navbar from './config/navbar'
+import { commentPlugin } from "vuepress-plugin-comment2";
 export default defineUserConfig({
+    locales: {
+        '/': {
+            lang: 'zh-CN',
+        },
+    },
     title: '博客狐',
     description: '文档、笔记',
     head: [
@@ -38,6 +44,14 @@ export default defineUserConfig({
             maxSuggestions: 10,
             isSearchable: (page) => page.path !== '/',
         }),
+        commentPlugin({
+            provider: "Giscus",
+            repo: "zsy110/vue_press_note",
+            comment: true,
+            repoId: "R_kgDOKisDSA",
+            category: "Announcements",
+            categoryId: "DIC_kwDOKisDSM4CaWKS",
+        })
 
     ],
 

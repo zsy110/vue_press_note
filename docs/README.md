@@ -7,7 +7,7 @@ actions:
     link: /md/java/
     type: primary
   - text: 一起交流
-    link: /md/联系我.md
+    link: /md/feedback
     type: secondary
 features:
 - title: Java 面向对象和基础
