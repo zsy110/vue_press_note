@@ -18,3 +18,4 @@ features:
   details: 🌈 工作需要彩虹的色彩，不应只有黑与白。
 footer: 鲁ICP备2023008950号 | copyright © 2022-present
 ---
+  <CommentService/>

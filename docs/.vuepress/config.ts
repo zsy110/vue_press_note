@@ -2,7 +2,7 @@ import { defineUserConfig } from 'vuepress';
 import { defaultTheme } from 'vuepress'
 import { searchPlugin } from '@vuepress/plugin-search'
 import navbar from './config/navbar'
-import { commentPlugin } from "vuepress-plugin-comment2";
+import { commentPlugin } from 'vuepress-plugin-comment2'
 export default defineUserConfig({
     locales: {
         '/': {
@@ -51,6 +51,7 @@ export default defineUserConfig({
             repoId: "R_kgDOKisDSA",
             category: "Announcements",
             categoryId: "DIC_kwDOKisDSM4CaWKS",
+            lazyLoading:"false",
         })
 
     ],
