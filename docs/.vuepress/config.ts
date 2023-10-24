@@ -31,7 +31,8 @@ export default defineUserConfig({
         sidebarDepth: 4,
         editLinkText: '在 GitHub 上编辑此页',
         lastUpdatedText: '上次更新',
-        contributorsText: '贡献者',
+        // contributorsText: '贡献者',
+        contributors: false,
     }),
     plugins: [
         searchPlugin({
@@ -51,7 +52,7 @@ export default defineUserConfig({
             repoId: "R_kgDOKisDSA",
             category: "Announcements",
             categoryId: "DIC_kwDOKisDSM4CaWKS",
-            lazyLoading:"false",
+            lazyLoading: "false",
         })
 
     ],
