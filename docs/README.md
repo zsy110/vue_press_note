@@ -4,10 +4,10 @@ heroImage: images/logo.png
 heroText: java学习指南
 actions:
   - text: 开始学习
-    link: /md/java/
+    link: /md/feedback/study.md
     type: primary
   - text: 一起交流
-    link: /md/feedback
+    link: /md/feedback/feedback.md
     type: secondary
 features:
 - title: Java 面向对象和基础

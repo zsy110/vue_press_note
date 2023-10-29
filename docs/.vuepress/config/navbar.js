@@ -36,12 +36,94 @@ module.exports = [
         ]
     },
     {
+        text: '数据库',
+        children: [
+            {
+                text: 'mysql',
+                children: [
+                    {
+                        text: 'mysql配置相关',
+                        link: '/md/数据库/mysql/mysql配置相关.md'
+                    },
+                    {
+                        text: 'mysql常用语句',
+                        link: '/md/数据库/mysql/mysql常用语句.md'
+                    },
+                ]
+            },
+            {
+                text: 'Redis',
+                children: [
+                    {
+                        text: 'Redis基础',
+                        link: '/md/数据库/Redis/Redis基础.md'
+                    },
+                ]
+            },
+            {
+                text: 'oracle',
+                children: [
+                    {
+                        text: 'oracle基础使用',
+                        link: '/md/数据库/oracle/oracle基础使用.md'
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        text: 'Docker',
+        children: [
+            {
+                text: 'Docker基础',
+                children: [
+                    {
+                        text: 'docker常见问题',
+                        link: '/md/docker/docker常见问题.md'
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        text: '网关',
+        children: [
+            {
+                text: 'nginx',
+                children: [
+                    {
+                        text: 'nginx基础',
+                        link: '/md/网关/nginx/nginx基础.md'
+                    },
+                    {
+                        text: 'nginx安全加固',
+                        link: '/md/网关/nginx/nginx安全加固.md'
+                    },
+                ]
+            },
+        ]
+    },
+    {
+        text: 'Spring',
+        children: [
+            {
+                text: 'linux基础',
+                children: [
+                    {
+                        text: 'linux简单使用',
+                        link: '/md/linux/linux基础使用.md'
+                    },
+                ]
+            },
+        ]
+    },
+    {
         text: '开发工具',
         children: [{
-            text: '在线编辑',
+            text: 'Git',
             children: [{
-                text: '图片压缩',
-                link: 'https://tinypng.com/'
+                text: 'Git常用配置与使用',
+                link: '/md/tools/Git常用配置与使用.md'
             }]
         },
         {
@@ -56,26 +138,14 @@ module.exports = [
             }
             ]
         },
-        {
-            text: '博客指南',
-            children: [{
-                text: '掘金',
-                link: 'https://juejin.im/'
-            },
-            {
-                text: 'CSDN',
-                link: 'https://blog.csdn.net/'
-            }
-            ]
-        }
         ]
     },
     {
         text: '关于',
-        link: '/md/about.md'
+        link: '/md/feedback/about.md'
     },
     {
         text: '错误反馈',
-        link: '/md/feedback/'
+        link: '/md/feedback/feedback.md'
     },
 ]
